@@ -2,60 +2,116 @@
 <html lang="de">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RealityCheck App</title>
+
     <style>
         body {
-            font-family: Arial;
-            background: #0b1f3a;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(#0b1f3a, #050f1f);
             color: white;
             text-align: center;
-            padding: 40px;
+            margin: 0;
+            padding: 20px;
         }
-        h1 { color: #00ffff; }
+
+        h1 {
+            color: #00ffff;
+            font-size: 32px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #6A5ACD;
+        }
+
         .box {
             max-width: 600px;
             margin: auto;
+            padding: 20px;
         }
-        a {
-            color: #00ffff;
+
+        .card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .feature {
+            margin: 8px 0;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 20px;
+            background: #6A5ACD;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: 0.2s;
+        }
+
+        .button:hover {
+            background: #7B6FFF;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #888;
         }
     </style>
 </head>
+
 <body>
 
 <div class="box">
-    <h1>RealityCheck</h1>
+
+    <h1>🧠 RealityCheck ⏰</h1>
 
     <p>
-        A simple and powerful timer app designed for focus,
-        interval training and productivity.
+        A minimalist timer designed for focus, interval training  
+        and distraction-free productivity.
     </p>
 
-    <p>
-        Perfect for Meta Quest and everyday use.
-    </p>
+    <div class="card">
+        <h2>✨ Features</h2>
+        <div class="feature">✔ Countdown Timer</div>
+        <div class="feature">✔ Interval Mode with custom plans</div>
+        <div class="feature">✔ Notifications</div>
+        <div class="feature">✔ Works completely offline</div>
+    </div>
 
-    <h2>Features</h2>
-    <p>
-        ✔ Countdown Timer<br>
-        ✔ Interval Mode<br>
-        ✔ Notifications<br>
-        ✔ Works offline
-    </p>
+    <div class="card">
+        <h2>🎯 Perfect for</h2>
+        <p>
+            Meta Quest workouts, focus sessions, productivity sprints  
+            and anyone who hates bloated apps.
+        </p>
+    </div>
 
-    <h2>Privacy</h2>
-    <p>
-        <a href="renatolueth-ux.github.io/realitycheck-privacy/">Privacy Policy</a>
-    </p>
+    <div class="card">
+        <h2>🔒 Privacy</h2>
+        <p>
+            Your data stays on your device. No tracking. No nonsense.
+        </p>
 
-    <h2>Support</h2>
-    <p>
-        renato.lueth@online.de
-    </p>
+        <a class="button" href="https://renatolueth-ux.github.io/realitycheck-privacy/">
+            View Privacy Policy
+        </a>
+    </div>
 
-    <p style="margin-top:40px;">
+    <div class="card">
+        <h2>📧 Support</h2>
+        <p>renato.lueth@online.de</p>
+    </div>
+
+    <div class="footer">
         © Renato Lüth
-    </p>
+    </div>
+
 </div>
 
 </body>
